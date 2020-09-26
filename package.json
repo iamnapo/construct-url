@@ -1,0 +1,54 @@
+{
+  "name": "@iamnapo/construct-url",
+  "version": "0.0.0",
+  "description": "Small utility function to construct URLs, without caring about slashes or encoding",
+  "keywords": [
+    "construct",
+    "url",
+    "base",
+    "path",
+    "query",
+    "query-params"
+  ],
+  "homepage": "https://github.com/iamnapo/construct-url#readme",
+  "bugs": {
+    "url": "https://github.com/iamnapo/construct-url/issues"
+  },
+  "repository": "github:iamnapo/construct-url",
+  "license": "MIT",
+  "author": {
+    "name": "Napoleon-Christos Oikonomou",
+    "email": "napoleonoikon@gmail.com",
+    "url": "https://iamnapo.me"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "lint": "eslint . --cache",
+    "start": "node index.js",
+    "test": "npm run lint && ava"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^3.12.1",
+    "eslint": "^7.9.0",
+    "eslint-config-iamnapo": "^8.0.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-unicorn": "^22.0.0",
+    "husky": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

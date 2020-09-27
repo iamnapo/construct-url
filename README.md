@@ -24,10 +24,6 @@ constructUrl("https://example.com", "/foo", { "//bar//": true }); // => "https:/
 
 ## API
 
-base: string | URL,
-	path?: string,
-	query?: string | [[string, any]] | { [key: string]: any } | URLSearchParams
-
 ### constructUrl(base, path?, query?)
 
 Get a full URL, including encoded query parameters.

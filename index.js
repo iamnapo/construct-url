@@ -1,7 +1,9 @@
 const constructUrl = (base, path = "", query) => {
 	if (typeof base !== "string" && !(base instanceof URL)) throw new TypeError("`base` must be a string or URL");
 	if (typeof path !== "string") throw new TypeError("`path` must be a string");
-	if (typeof base === "string" && !base.endsWith("/")) base += "/";
+
+	base = String(base);
+	if (!base.endsWith("/")) base += "/";
 	if (path.startsWith("/")) path = path.slice(1);
 
 	try {

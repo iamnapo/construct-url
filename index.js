@@ -1,4 +1,4 @@
-const constructUrl = (base, path = "", query) => {
+const constructUrl = (base, path = "", query = "") => {
 	if (typeof base !== "string" && !(base instanceof URL)) throw new TypeError("`base` must be a string or URL");
 	if (typeof path !== "string") throw new TypeError("`path` must be a string");
 

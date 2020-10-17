@@ -12,6 +12,6 @@ cUrl("https://example.com", "/foo", { "//bar//": true }); // => "https://example
 declare function constructUrl(
 	base: string | URL,
 	path?: string,
-	query?: string | [[string, any]] | { [key: string]: any } | URLSearchParams
+	query?: string | [[string, unknown]] | Record<string, unknown> | URLSearchParams
 ): string;
 export = constructUrl;

@@ -39,10 +39,10 @@
   "dependencies": {},
   "devDependencies": {
     "ava": "^3.13.0",
-    "eslint": "^7.10.0",
-    "eslint-config-iamnapo": "^8.0.1",
+    "eslint": "^7.11.0",
+    "eslint-config-iamnapo": "^9.0.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-unicorn": "^22.0.0",
+    "eslint-plugin-unicorn": "^23.0.0",
     "husky": "^4.3.0"
   },
   "engines": {

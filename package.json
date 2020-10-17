@@ -1,6 +1,6 @@
 {
   "name": "@iamnapo/construct-url",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Small utility function to construct URLs, without caring about slashes or encoding",
   "keywords": [
     "construct",

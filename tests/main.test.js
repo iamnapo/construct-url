@@ -1,9 +1,12 @@
-const test = require("ava");
+import test from "ava";
 
-const constructUrl = require("..");
+import constructUrl from "../index.js";
 
 test("main", (t) => {
 	t.is(constructUrl("https://example.com", "/foo"), "https://example.com/foo");
+	t.is(constructUrl("https://example.com", "foo"), "https://example.com/foo");
+	t.is(constructUrl("https://example.com/", "/foo"), "https://example.com/foo");
+	t.is(constructUrl("https://example.com/", "foo"), "https://example.com/foo");
 	t.is(constructUrl(new URL("https://example.com"), "/foo"), "https://example.com/foo");
 	t.is(constructUrl("https://example.com/foo", "/bar"), "https://example.com/foo/bar");
 	t.is(constructUrl(new URL("/foo", "https://example.com"), "/bar"), "https://example.com/foo/bar");

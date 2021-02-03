@@ -18,4 +18,4 @@ const constructUrl = (base, path = "", query = "") => {
 	}
 };
 
-module.exports = constructUrl;
+export default constructUrl;

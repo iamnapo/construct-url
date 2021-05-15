@@ -32,22 +32,15 @@
     "start": "node index.js",
     "test": "npm run lint && ava"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  },
   "eslintConfig": {
     "extends": "iamnapo"
   },
-  "dependencies": {},
   "devDependencies": {
     "ava": "^3.15.0",
-    "eslint": "^7.19.0",
-    "eslint-config-iamnapo": "^12.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-unicorn": "^27.0.0",
-    "husky": "^4.3.8"
+    "eslint": "^7.26.0",
+    "eslint-config-iamnapo": "^15.0.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-unicorn": "^32.0.1"
   },
   "engines": {
     "node": ">=12"

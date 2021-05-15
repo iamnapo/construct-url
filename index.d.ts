@@ -9,9 +9,8 @@ cUrl("https://example.com", "", { bar: true }); // => "https://example.com/?bar=
 cUrl("https://example.com", "/foo", { "//bar//": true }); // => "https://example.com/foo?%2F%2Fbar%2F%2F=true"
 ```
 */
-declare function constructUrl(
+export default function constructUrl(
 	base: string | URL,
 	path?: string,
 	query?: string | [[string, unknown]] | Record<string, unknown> | URLSearchParams
 ): string;
-export = constructUrl;

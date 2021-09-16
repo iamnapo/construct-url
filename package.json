@@ -28,7 +28,7 @@
     "index.d.ts"
   ],
   "scripts": {
-    "lint": "eslint . --cache",
+    "lint": "eslint . --ext .js --cache",
     "start": "node index.js",
     "test": "npm run lint && ava && tsd"
   },
@@ -37,10 +37,10 @@
   },
   "devDependencies": {
     "ava": "^3.15.0",
-    "eslint": "^7.29.0",
-    "eslint-config-iamnapo": "^15.0.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-unicorn": "^34.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-iamnapo": "^16.1.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-unicorn": "^36.0.0",
     "tsd": "^0.17.0"
   },
   "engines": {

@@ -7,7 +7,7 @@
 ## Install
 
 ```sh
-$ npm i @iamnapo/construct-url
+npm i @iamnapo/construct-url
 ```
 
 ## Usage

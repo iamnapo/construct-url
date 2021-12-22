@@ -22,26 +22,45 @@
     "url": "https://iamnapo.me"
   },
   "type": "module",
-  "exports": "./index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "index.js",
-    "index.d.ts"
+    "dist/index.js",
+    "dist/index.d.ts"
   ],
   "scripts": {
-    "lint": "eslint . --ext .js --cache",
-    "start": "node index.js",
-    "test": "npm run lint && ava && tsd"
+    "build": "tsc",
+    "lint": "eslint . --ext .ts --cache",
+    "prepare": "npm run build",
+    "test": "npm run lint && ava"
   },
   "eslintConfig": {
-    "extends": "iamnapo"
+    "extends": "iamnapo/typescript",
+    "ignorePatterns": "dist"
+  },
+  "ava": {
+    "extensions": {
+      "ts": "module"
+    },
+    "files": [
+      "tests/*"
+    ],
+    "nodeArguments": [
+      "--loader=ts-node/esm"
+    ],
+    "nonSemVerExperiments": {
+      "nextGenConfig": true,
+      "configurableModuleFormat": true
+    },
+    "timeout": "1m"
   },
   "devDependencies": {
+    "@iamnapo/tsconfig": "^1.0.0",
     "ava": "^3.15.0",
-    "eslint": "^7.32.0",
-    "eslint-config-iamnapo": "^16.1.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-unicorn": "^36.0.0",
-    "tsd": "^0.17.0"
+    "eslint": "^8.5.0",
+    "eslint-config-iamnapo": "^20.0.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
   },
   "engines": {
     "node": ">=12"

@@ -15,7 +15,7 @@ jobs:
           node-version: 16
 
       - name: 📥 Download deps
-        run: npm i --legacy-peer-deps
+        run: npm i
 
       - name: 🧪 Run test script
         run: npm test

@@ -1,0 +1,6 @@
+{
+	"extends": "@iamnapo/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist"
+	},
+}

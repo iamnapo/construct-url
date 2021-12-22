@@ -18,6 +18,9 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@iamnapo"
 
+      - name: 📥 Download deps
+        run: npm i
+
       - name: 🚀 Release
         run: npm publish
         env:

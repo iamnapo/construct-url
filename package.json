@@ -38,29 +38,21 @@
     "extends": "iamnapo/typescript",
     "ignorePatterns": "dist"
   },
-  "ava": {
-    "extensions": {
-      "ts": "module"
-    },
-    "files": [
-      "tests/*"
-    ],
-    "nodeArguments": [
-      "--loader=ts-node/esm"
-    ],
-    "nonSemVerExperiments": {
-      "nextGenConfig": true,
-      "configurableModuleFormat": true
-    },
-    "timeout": "1m"
-  },
+	"ava": {
+		"typescript": {
+			"rewritePaths": {
+				"/": "dist/"
+			},
+			"compile": "tsc"
+		}
+	},
   "devDependencies": {
+    "@ava/typescript": "^3.0.1",
     "@iamnapo/tsconfig": "^1.0.0",
-    "ava": "^3.15.0",
-    "eslint": "^8.5.0",
-    "eslint-config-iamnapo": "^20.0.0",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.4"
+    "ava": "^4.0.1",
+    "eslint": "^8.7.0",
+    "eslint-config-iamnapo": "^21.0.0",
+    "typescript": "^4.5.5"
   },
   "engines": {
     "node": ">=12"

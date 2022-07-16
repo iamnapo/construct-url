@@ -2,7 +2,7 @@
 
 > Small utility function to construct URLs, without caring about slashes or encoding
 
-[![build](https://img.shields.io/github/workflow/status/iamnapo/construct-url/ci?style=for-the-badge&logo=github&label=)](https://github.com/iamnapo/construct-url/actions) [![npm](https://img.shields.io/npm/v/@iamnapo/construct-url.svg?style=for-the-badge&logo=npm&label=)](https://www.npmjs.com/package/@iamnapo/construct-url) [![size](https://img.shields.io/bundlephobia/min/@iamnapo/construct-url.svg?style=for-the-badge&label=size)](https://bundlephobia.com/result?p=@iamnapo/construct-url)
+[![build](https://badges.iamnapo.me/ci/iamnapo/construct-url)](https://github.com/iamnapo/construct-url/actions) [![npm](https://badges.iamnapo.me/npm/@iamnapo/construct-url)](https://www.npmjs.com/package/@iamnapo/construct-url) [![size](https://badges.iamnapo.me/size/@iamnapo/construct-url)](https://bundlephobia.com/result?p=@iamnapo/construct-url)
 
 ## Install
 

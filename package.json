@@ -1,43 +1,43 @@
 {
-  "name": "@iamnapo/construct-url",
-  "version": "2.1.0",
-  "description": "Small utility function to construct URLs, without caring about slashes or encoding",
-  "keywords": [
-    "construct",
-    "url",
-    "base",
-    "path",
-    "query",
-    "query-params"
-  ],
-  "homepage": "https://github.com/iamnapo/construct-url#readme",
-  "bugs": {
-    "url": "https://github.com/iamnapo/construct-url/issues"
-  },
-  "repository": "github:iamnapo/construct-url",
-  "license": "MIT",
-  "author": {
-    "name": "Napoleon-Christos Oikonomou",
-    "email": "napoleonoikon@gmail.com",
-    "url": "https://iamnapo.me"
-  },
-  "type": "module",
-  "exports": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist/index.js",
-    "dist/index.d.ts"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint . --ext .ts --cache",
-    "prepare": "npm run build",
-    "test": "npm run lint && ava"
-  },
-  "eslintConfig": {
-    "extends": "iamnapo/typescript",
-    "ignorePatterns": "dist"
-  },
+	"name": "@iamnapo/construct-url",
+	"version": "2.1.0",
+	"description": "Small utility function to construct URLs, without caring about slashes or encoding",
+	"keywords": [
+		"construct",
+		"url",
+		"base",
+		"path",
+		"query",
+		"query-params"
+	],
+	"homepage": "https://github.com/iamnapo/construct-url#readme",
+	"bugs": {
+		"url": "https://github.com/iamnapo/construct-url/issues"
+	},
+	"repository": "github:iamnapo/construct-url",
+	"license": "MIT",
+	"author": {
+		"name": "Napoleon-Christos Oikonomou",
+		"email": "napoleonoikon@gmail.com",
+		"url": "https://iamnapo.me"
+	},
+	"type": "module",
+	"exports": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist/index.js",
+		"dist/index.d.ts"
+	],
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint . --ext .ts --cache",
+		"prepare": "npm run build",
+		"test": "npm run lint && ava"
+	},
+	"eslintConfig": {
+		"extends": "iamnapo/typescript",
+		"ignorePatterns": "dist"
+	},
 	"ava": {
 		"typescript": {
 			"rewritePaths": {
@@ -46,18 +46,18 @@
 			"compile": "tsc"
 		}
 	},
-  "devDependencies": {
-    "@ava/typescript": "^3.0.1",
-    "@iamnapo/tsconfig": "^1.0.0",
-    "ava": "^4.0.1",
-    "eslint": "^8.7.0",
-    "eslint-config-iamnapo": "^21.0.0",
-    "typescript": "^4.5.5"
-  },
-  "engines": {
-    "node": ">=12"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"devDependencies": {
+		"@ava/typescript": "^3.0.1",
+		"@iamnapo/tsconfig": "^2.0.0",
+		"ava": "^4.3.1",
+		"eslint": "^8.19.0",
+		"eslint-config-iamnapo": "^26.0.0",
+		"typescript": "^4.7.4"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

@@ -43,7 +43,7 @@ Path relative to `base`.
 
 #### query
 
-Type: `string | [[string, any]] | { [key: string]: any } | URLSearchParams`\
+Type: `string | [string, unknown][] | Record<string, unknown> | URLSearchParams`\
 Default: `""`
 
 Query parameters to include in the resuliting URL.

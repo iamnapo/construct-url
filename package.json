@@ -32,30 +32,21 @@
 		"build": "tsc",
 		"lint": "eslint . --ext .ts --cache",
 		"prepare": "npm run build",
-		"test": "npm run lint && ava"
+		"test": "npm run lint && npm run build && node --test dist/tests"
 	},
 	"eslintConfig": {
 		"extends": "iamnapo/typescript",
 		"ignorePatterns": "dist"
 	},
-	"ava": {
-		"typescript": {
-			"rewritePaths": {
-				"/": "dist/"
-			},
-			"compile": "tsc"
-		}
-	},
 	"devDependencies": {
-		"@ava/typescript": "^3.0.1",
-		"@iamnapo/tsconfig": "^2.0.0",
-		"ava": "^4.3.1",
-		"eslint": "^8.19.0",
-		"eslint-config-iamnapo": "^26.0.0",
-		"typescript": "^4.7.4"
+		"@iamnapo/tsconfig": "^4.0.0",
+		"@types/node": "^20.2.5",
+		"eslint": "^8.41.0",
+		"eslint-config-iamnapo": "^30.0.0",
+		"typescript": "^5.0.4"
 	},
 	"engines": {
-		"node": ">=14"
+		"node": ">=16"
 	},
 	"publishConfig": {
 		"access": "public"

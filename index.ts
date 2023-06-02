@@ -12,7 +12,7 @@ constructUrl("https://example.com", "/foo", { "//bar//": true }); // => "https:/
 const constructUrl = (
 	base: string | URL,
 	path = "",
-	query: string | [[string, unknown]] | Record<string, unknown> | URLSearchParams = "",
+	query: string | [string, unknown][] | Record<string, unknown> | URLSearchParams = "",
 ) => {
 	if (typeof base !== "string" && !(base instanceof URL)) throw new TypeError("`base` must be a string or URL");
 	if (typeof path !== "string") throw new TypeError("`path` must be a string");

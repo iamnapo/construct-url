@@ -41,9 +41,9 @@
 	"devDependencies": {
 		"@iamnapo/tsconfig": "^4.0.0",
 		"@types/node": "^20.2.5",
-		"eslint": "^8.41.0",
-		"eslint-config-iamnapo": "^30.0.0",
-		"typescript": "^5.0.4"
+		"eslint": "^8.42.0",
+		"eslint-config-iamnapo": "^31.0.0",
+		"typescript": "^5.1.3"
 	},
 	"engines": {
 		"node": ">=16"
